@@ -1,0 +1,63 @@
+#header{
+    height: 116px;
+    background-color:#bb3342 ;
+    
+}
+
+#logo{
+    text-align: center;
+}
+
+
+#nav li{
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+    position: relative;
+}
+
+
+#nav li a{
+    color: #fff;
+    text-decoration: none;
+    line-height: 116px;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+
+
+#nav li:hover .subnav{
+    display: block;
+}
+#nav .subnav{
+    display: none;
+    z-index: 99;
+    position: absolute;
+    margin-top: -40px;
+    padding: 0;
+}
+
+#nav .subnav li{
+    text-align: start;
+    width: 120px;
+    height: 40px;
+    background-color: #fff;
+    box-shadow: 4px 4px #888888;
+    border-radius: 0.25rem;
+}
+
+#nav .subnav li a{
+    margin-left: 10px;
+    color: black;
+    line-height: 40px;
+    text-transform: none;
+}
+
+
+
+#nav .subnav li:hover{
+    background-color: #ccc;
+}
+
+

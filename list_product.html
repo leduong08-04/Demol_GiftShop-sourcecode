@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+
+    <!-- reuse css -->
+    <link rel="stylesheet" href="assets/style/reuse.css">
+    <link rel="stylesheet" href="assets/style/header.css">
+    <link rel="stylesheet" href="assets/style/homepage.css">
+    <link rel="stylesheet" href="assets/style/product_card.css">
+    <link rel="stylesheet" href="assets/style/footer.css">
+    <!-- custom css -->
+    <link rel="stylesheet" href="assets/style/list_product.css">
+
+
+    <script src="assets/js/products.js"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="row mx-0">
+            <div class="col" id="logo">
+                <a href=""><img src="assets/img/logo.png" alt="" id="" height="114px" width="400px"></a>
+            </div>
+            <div class="col">
+                <ul id="nav">
+                    <li><a href="">All product</a></li>
+                    <li><a href="">Mugs</a></li>
+                    <li><a href="">Cards</a></li>
+                    <li><a href="">Bracelets</a></li>
+                    <li>
+                        <a href="#">Brand</a>
+                        <ul class="subnav">
+                            <li><a href="">Amara</a></li>
+                            <li><a href="">Farfetch</a></li>
+                            <li><a href="">Hallmara</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Contact us</a></li>
+                   </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="container intro">
+        <img src="https://www.patrickranchmuseum.org/Images/giftshop/Gift-shop-sign.jpg?w=719" alt="" height="310px">
+        <p>Welcome to our gift shop, where you will find unique and thoughtful gifts for any occasion. We pride ourselves on offering a wide variety of products that are both beautiful and functional, perfect for any budget and taste. Whether you're searching for a special something for a loved one or a unique item to decorate your home, we have everything you need in one convenient location.
+
+            Our gift shop offers a carefully curated collection of products that are sourced from around the world. From handmade jewelry to artisanal home goods, we only offer items that are of the highest quality, and that we believe will bring joy to our customers.
+            
+            Our passionate and knowledgeable team is always on hand to offer personalized assistance and help you find that perfect item. We understand that searching for the right gift can be overwhelming, but we are here to make the experience easy and enjoyable.
+            
+            At our gift shop, we believe that a gift should be more than just a physical item. It should be a meaningful expression of love, appreciation, or congratulations. That's why we go the extra mile to ensure that every product we offer is special, and that every customer walks away feeling satisfied.
+            
+            We invite you to visit our gift shop and browse our selection. We are confident that you will find something you love, and we look forward to helping you make the perfect gift choice.</p>
+    </div>
+    <h1>ALL PRODUCT</h1>
+    <div class="container">
+        <form class="filter">
+            <div class="item">
+                <label>Category</label>
+                <select name="categories">
+                    <option value="">---</option>
+                    <option value="Mugs">Mugs</option>
+                    <option value="Cards">Cards</option>
+                    <option value="Bracelets">Bracelets</option>
+                </select>
+            </div>
+            <div class="item">
+                <label>Brand</label>
+                <select name="brand">
+                    <option value="">---</option>
+                    <option value="amara">Amara</option>
+                    <option value="farfetch">Farfetch</option>
+                    <option value="hallmark">Hallmark</option>
+
+                </select>
+            </div>
+            <div class="item">
+                <label>Name</label>
+                <input name="name" type="text">
+            </div>
+            <div class="item">
+                <label>Min Price</label>
+                <input name="minPrice" type="number" min="1">
+            </div>
+            <div class="item">
+                <label>Max Price</label>
+                <input name="maxPrice" type="number" min="1">
+            </div>
+            <div class="item submit">
+                <button>Search</button>
+            </div>
+        </form>
+        <div class="countResults">
+            Found <b id="count">5</b> results
+        </div>
+        <div id="list">
+            <ul class="products ps-0" id="listProduct">
+               
+            </ul>
+
+        </div>
+
+
+
+
+<!-- CDN script -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+<!-- custom script -->
+<script src="assets/js/list_product.js"></script>
+</body>
+
+</html>
